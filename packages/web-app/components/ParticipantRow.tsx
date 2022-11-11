@@ -1,6 +1,6 @@
 import { ChangeEvent, FocusEvent } from "react";
 import { utils } from "ethers";
-import { TextInput, TokenBalanceInput } from "@nation3/ui-components";
+import { AddressInput, TokenBalanceInput } from "@nation3/ui-components";
 
 // TODO:
 // - Better way of updating array?
@@ -41,7 +41,7 @@ export const ParticipantRow = ({
 	return (
 		<div className="flex gap-2">
 			<div className="basis-1/2">
-				<TextInput
+				<AddressInput
 					value={positions[index].account}
 					placeholder="vitalik.eth"
 					onChange={(e: ChangeEvent<HTMLInputElement>) => {
